@@ -1,0 +1,77 @@
+/* =========================================================
+   Design tokens — Luxury Glamping
+   ========================================================= */
+:root {
+  /* Forest greens */
+  --c-forest-950: #0c140f;
+  --c-forest-900: #111c15;
+  --c-forest-800: #16251c;
+  --c-forest-700: #1f3328;
+  --c-forest-600: #2c4537;
+  --c-sage: #8b9b82;
+
+  /* Beige & earth tones */
+  --c-cream: #faf7f1;
+  --c-beige-100: #f4eee4;
+  --c-beige-200: #ece3d4;
+  --c-beige-300: #ddcfb9;
+  --c-sand: #c8b18c;
+  --c-clay: #b5835a;
+  --c-earth: #9a7150;
+  --c-earth-dark: #7b583c;
+
+  /* Neutrals */
+  --c-black: #0e0f0d;
+  --c-ink: #1c1f1b;
+  --c-text: #3a3e38;
+  --c-muted: #6d7268;
+  --c-line: rgba(28, 31, 27, 0.12);
+  --c-line-light: rgba(255, 255, 255, 0.16);
+  --c-white: #ffffff;
+  --c-error: #b4442f;
+  --c-success: #3f7a52;
+
+  /* Typography */
+  --font-display: 'Cormorant Garamond', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+  --fs-xl: clamp(1.75rem, 1.4rem + 1.4vw, 2.5rem);
+  --fs-2xl: clamp(2.25rem, 1.6rem + 2.6vw, 3.75rem);
+  --fs-hero: clamp(2.75rem, 1.6rem + 5.2vw, 6.25rem);
+
+  /* Layout */
+  --container: 1240px;
+  --gutter: clamp(20px, 4.5vw, 48px);
+  --section-y: clamp(72px, 6vw + 40px, 140px);
+  --header-h: 84px;
+
+  /* Shape */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* Elevation */
+  --shadow-sm: 0 1px 2px rgba(17, 28, 21, 0.06), 0 2px 8px rgba(17, 28, 21, 0.05);
+  --shadow-md: 0 6px 18px rgba(17, 28, 21, 0.08), 0 2px 6px rgba(17, 28, 21, 0.05);
+  --shadow-lg: 0 24px 50px -12px rgba(17, 28, 21, 0.28), 0 8px 18px rgba(17, 28, 21, 0.08);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 0.3s;
+  --dur: 0.4s;
+  --dur-slow: 0.5s;
+}
+
+@media (max-width: 960px) {
+  :root {
+    --header-h: 72px;
+  }
+}
